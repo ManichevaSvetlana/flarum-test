@@ -1,0 +1,13 @@
+runtime: php55
+service: forum
+
+beta_settings:
+  cloud_sql_instances: "kombucha:us-central1:kombucha"
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+
+handlers:
+  - url: /images
+    static_dir: images
